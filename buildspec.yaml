@@ -38,7 +38,7 @@ phases:
       - echo Writing image definitions file...
       # REPOSITORY_URI=140023374329.dkr.ecr.us-east-1.amazonaws.com/flight-userms
       - REPOSITORY_URI=$AWS_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/$IMAGE_REPO_NAME
-      - printf '[{"name":"bankms-service","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
+      - printf '[{"name":"userms-service","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
       - echo Writing image definitions file...
       - # add your container name
       - DOCKER_CONTAINER_NAME=userms-repo
